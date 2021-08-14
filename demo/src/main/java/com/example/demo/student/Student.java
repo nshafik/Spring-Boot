@@ -9,20 +9,28 @@ import java.time.LocalDate;
 public class Student {
 
     @Id
-//    @SequenceGenerator(
-//            name= "student_name",
-//            sequenceName = "student_name",
-//            allocationSize = 1
-//    )
-//    @GeneratedValue(
-//            strategy = GenerationType.SEQUENCE,
-//            generator = "student_name"
-//    )
-    @column(name="")
+    @SequenceGenerator(
+            name= "student_name",
+            sequenceName = "student_name",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "student_name"
+    )
+     @Column(name="student_id")
     private Long id;
+
+    @Column(name="student_name")
     private String name;
+
+   @Column (name="student_email")
     private String email;
+
+    @Column(name="student_dob")
     private LocalDate dob;
+
+    @Column(name="student_age")
     private Integer age;
 
     public Student() {
