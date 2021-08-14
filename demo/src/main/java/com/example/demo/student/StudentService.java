@@ -17,25 +17,8 @@ public class StudentService {
     }
 
     public List<Student> getStudents() {
-        return studentRepository.findAll();
+        return studentRepository.findAll();}
 
-//        return List.of(
-//                new Student(
-//                        1l,
-//                        "asdf",
-//                        "asd@gmail.com",
-//                        LocalDate.of(2000, Month.DECEMBER,26),
-//                        21
-//                ),
-//                 new Student(
-//                        2l,
-//                        "asdf",
-//                         "asd@gmail.com",
-//                         LocalDate.of(2000, Month.DECEMBER,26),
-//                      21
-//                  )
-//        );
-    }
 
 }
 
