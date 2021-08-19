@@ -27,9 +27,17 @@ public class StudentConfig {
                          LocalDate.of(2000, Month.DECEMBER,26),
                       21
                   );
-                 repository.saveAll(
-                         List.of(alex,asdf)
-                 );
+
+            Student shady = new Student(
+
+                    "shady",
+                    "shady@gmail.com",
+                    LocalDate.of(1988, 1,13),
+                    32
+            );
+            repository.saveAll(
+                    List.of(alex,asdf,shady)
+            );
         };
     }
 
